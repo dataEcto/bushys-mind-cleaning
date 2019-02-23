@@ -47,6 +47,7 @@ public class DialogManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+	    Debug.Log("Show Next Sentence");
 		//End dialogue if there are no sentences left
         if (_sentences.Count == 0 )
         {

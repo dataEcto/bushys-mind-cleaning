@@ -13,66 +13,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="708">
+              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
               <folding>
-                <marker date="1550796814021" expanded="true" signature="7:114" ph="..." />
-                <marker date="1550796814021" expanded="true" signature="158:1806" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="236:438" ph="/* Currently there is a glitch where ... */" />
-                <marker date="1550796814021" expanded="true" signature="484:649" ph="/* Like an Array, but Queue uses FIFO ... */" />
-                <marker date="1550796814021" expanded="true" signature="735:799" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="849:1155" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1044:1106" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1194:1510" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1284:1349" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1555:1695" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1632:1692" ph="{...}" />
-                <marker date="1550796814021" expanded="true" signature="1724:1804" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-              <folding>
-                <marker date="1550801293318" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550801293318" expanded="true" signature="122:1430" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
-                <marker date="1550801293318" expanded="true" signature="661:780" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="806:1337" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="878:944" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="1088:1333" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="1161:1303" ph="{...}" />
-                <marker date="1550801293318" expanded="true" signature="1374:1425" ph="{...}" />
+                <marker date="1550876356467" expanded="false" signature="7:114" ph="..." />
+                <marker date="1550876356467" expanded="true" signature="158:1844" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="236:438" ph="/* Currently there is a glitch where ... */" />
+                <marker date="1550876356467" expanded="true" signature="484:649" ph="/* Like an Array, but Queue uses FIFO ... */" />
+                <marker date="1550876356467" expanded="true" signature="735:799" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="849:1155" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1044:1106" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1194:1548" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1322:1387" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1593:1733" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1670:1730" ph="{...}" />
+                <marker date="1550876356467" expanded="true" signature="1762:1842" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <marker date="1550877436768" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550877436768" expanded="true" signature="122:1416" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
+                <marker date="1550877436768" expanded="true" signature="661:780" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="806:1323" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="866:930" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="1074:1319" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="1147:1289" ph="{...}" />
+                <marker date="1550877436768" expanded="true" signature="1360:1411" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
               <folding>
-                <marker date="1550794177068" expanded="true" signature="6:148" ph="..." />
-                <marker date="1550794177068" expanded="true" signature="150:249" ph="/* This is code from another game I was attempting ... */" />
-                <marker date="1550794177068" expanded="true" signature="291:1994" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="297:354" ph="/// Set Up Variables ... " />
-                <marker date="1550794177068" expanded="true" signature="527:588" ph="/// In Game used Variables ... " />
-                <marker date="1550794177068" expanded="true" signature="667:1086" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="823:892" ph="/* Get the value of the slider ... */" />
-                <marker date="1550794177068" expanded="true" signature="965:1052" ph="/* Set to true for now for testing purposes ... */" />
-                <marker date="1550794177068" expanded="true" signature="1105:1234" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="1175:1223" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="1275:1462" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="1506:1897" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="1748:1870" ph="{...}" />
-                <marker date="1550794177068" expanded="true" signature="1928:1986" ph="{...}" />
+                <marker date="1550881495400" expanded="false" signature="6:148" ph="..." />
+                <marker date="1550881495400" expanded="true" signature="150:249" ph="/* This is code from another game I was attempting ... */" />
+                <marker date="1550881495400" expanded="true" signature="291:4058" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="297:354" ph="/// Set Up Variables ... " />
+                <marker date="1550881495400" expanded="true" signature="565:626" ph="/// In Game used Variables ... " />
+                <marker date="1550881495400" expanded="true" signature="921:1279" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="1077:1146" ph="/* Get the value of the slider ... */" />
+                <marker date="1550881495400" expanded="true" signature="1298:3243" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="1417:1521" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="1589:1638" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="1711:1768" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="1825:2062" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2096:2201" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2232:3206" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2363:2536" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2616:2677" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2754:2823" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="2883:3115" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="3274:3332" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="3380:3809" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="3667:3789" ph="{...}" />
+                <marker date="1550881495400" expanded="true" signature="3853:4040" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -100,10 +108,10 @@
         <option value="$PROJECT_DIR$/Assets/DialogueTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/DialogueManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Dialog.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Object1Trigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" />
       </list>
     </option>
   </component>
@@ -167,11 +175,12 @@
       <workItem from="1550764289805" duration="3273000" />
       <workItem from="1550768622521" duration="1488000" />
       <workItem from="1550792564962" duration="6711000" />
+      <workItem from="1550873072774" duration="5573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19854000" />
+    <option name="totallyTimeSpent" value="25427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -184,6 +193,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -201,7 +211,7 @@
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Unity" order="11" weight="0.32922733" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Unit Tests" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" />
@@ -268,64 +278,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <marker date="1550794177068" expanded="true" signature="6:148" ph="..." />
-            <marker date="1550794177068" expanded="true" signature="150:249" ph="/* This is code from another game I was attempting ... */" />
-            <marker date="1550794177068" expanded="true" signature="291:1994" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="297:354" ph="/// Set Up Variables ... " />
-            <marker date="1550794177068" expanded="true" signature="527:588" ph="/// In Game used Variables ... " />
-            <marker date="1550794177068" expanded="true" signature="667:1086" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="823:892" ph="/* Get the value of the slider ... */" />
-            <marker date="1550794177068" expanded="true" signature="965:1052" ph="/* Set to true for now for testing purposes ... */" />
-            <marker date="1550794177068" expanded="true" signature="1105:1234" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="1175:1223" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="1275:1462" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="1506:1897" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="1748:1870" ph="{...}" />
-            <marker date="1550794177068" expanded="true" signature="1928:1986" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="708">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
-            <marker date="1550796814021" expanded="true" signature="7:114" ph="..." />
-            <marker date="1550796814021" expanded="true" signature="158:1806" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="236:438" ph="/* Currently there is a glitch where ... */" />
-            <marker date="1550796814021" expanded="true" signature="484:649" ph="/* Like an Array, but Queue uses FIFO ... */" />
-            <marker date="1550796814021" expanded="true" signature="735:799" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="849:1155" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1044:1106" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1194:1510" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1284:1349" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1555:1695" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1632:1692" ph="{...}" />
-            <marker date="1550796814021" expanded="true" signature="1724:1804" ph="{...}" />
+            <marker date="1550876356467" expanded="false" signature="7:114" ph="..." />
+            <marker date="1550876356467" expanded="true" signature="158:1844" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="236:438" ph="/* Currently there is a glitch where ... */" />
+            <marker date="1550876356467" expanded="true" signature="484:649" ph="/* Like an Array, but Queue uses FIFO ... */" />
+            <marker date="1550876356467" expanded="true" signature="735:799" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="849:1155" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1044:1106" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1194:1548" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1322:1387" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1593:1733" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1670:1730" ph="{...}" />
+            <marker date="1550876356467" expanded="true" signature="1762:1842" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        <state relative-caret-position="528">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
-            <marker date="1550801293318" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550801293318" expanded="true" signature="122:1430" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
-            <marker date="1550801293318" expanded="true" signature="661:780" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="806:1337" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="878:944" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="1088:1333" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="1161:1303" ph="{...}" />
-            <marker date="1550801293318" expanded="true" signature="1374:1425" ph="{...}" />
+            <marker date="1550877436768" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550877436768" expanded="true" signature="122:1416" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
+            <marker date="1550877436768" expanded="true" signature="661:780" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="806:1323" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="866:930" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="1074:1319" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="1147:1289" ph="{...}" />
+            <marker date="1550877436768" expanded="true" signature="1360:1411" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+          <folding>
+            <marker date="1550881495400" expanded="false" signature="6:148" ph="..." />
+            <marker date="1550881495400" expanded="true" signature="150:249" ph="/* This is code from another game I was attempting ... */" />
+            <marker date="1550881495400" expanded="true" signature="291:4058" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="297:354" ph="/// Set Up Variables ... " />
+            <marker date="1550881495400" expanded="true" signature="565:626" ph="/// In Game used Variables ... " />
+            <marker date="1550881495400" expanded="true" signature="921:1279" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="1077:1146" ph="/* Get the value of the slider ... */" />
+            <marker date="1550881495400" expanded="true" signature="1298:3243" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="1417:1521" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="1589:1638" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="1711:1768" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="1825:2062" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2096:2201" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2232:3206" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2363:2536" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2616:2677" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2754:2823" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="2883:3115" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="3274:3332" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="3380:3809" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="3667:3789" ph="{...}" />
+            <marker date="1550881495400" expanded="true" signature="3853:4040" ph="{...}" />
           </folding>
         </state>
       </provider>

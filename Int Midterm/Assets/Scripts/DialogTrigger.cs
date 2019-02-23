@@ -32,9 +32,11 @@ public class DialogTrigger : MonoBehaviour
     public void Update()
     {
       
-        if (Input.GetKeyDown(KeyCode.Space) && isTalking )
+        if (Input.GetKeyDown(KeyCode.Mouse0) )
         {
-	        dialogManager.DisplayNextSentence();
+
+		  dialogManager.DisplayNextSentence();
+	
         }
         
         //Object One

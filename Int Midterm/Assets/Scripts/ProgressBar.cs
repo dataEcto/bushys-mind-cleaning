@@ -13,16 +13,26 @@ public class ProgressBar : MonoBehaviour {
     /// </summary>
     public float currentProgress { get; set; }
     public float maxProgress { get; set; }
+    public float ProgressRefillRate;
 
-    public TextMeshProUGUI progressBarText;
-   // public Animator animator;
-
-
+    //public TextMeshProUGUI progressBarText;
+   public Animator animator;
+   
    /// <summary>
    /// In Game used Variables
    /// </summary>
    public Slider progressBar;
 
+   public GameObject player;
+   
+   public GameObject objectOne;
+   private bool oneDone;
+   public GameObject objectTwo;
+   private bool twoDone;
+   public GameObject objectThree;
+   private bool threeDone;
+   
+   
    public bool shouldFill;
      
 	void Start ()
@@ -36,27 +46,103 @@ public class ProgressBar : MonoBehaviour {
         //Get the value of the slider 
         //set it to calculate progress
         progressBar.value = CalculateProgress();
-    
- 
-        
-       //Set to true for now for testing purposes
-       //This should be set to false usually
-        shouldFill = true;
 
+        oneDone = false;
+        twoDone = false;
+        threeDone = false;
     }
 	
 
 	void Update ()
     {
-
-        if (Input.GetKeyDown(KeyCode.F) && shouldFill == true)
+        //Object One
+        if (Vector3.Distance(objectOne.transform.position, player.transform.position) < 2f)
         {
-            addProgress(3);
+            shouldFill = true;
+            animator.SetBool("shouldAppear",true);  
         }
-       
+        
+        if (Input.GetKeyDown(KeyCode.Space) && shouldFill)
+        {
+            addProgress(10);
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
+        {
+            Debug.Log("Don't Fill");
+        }
+
+        if (currentProgress >= 99f && oneDone == false)
+        {
+            oneDone = true;
+            shouldFill = false;
+            currentProgress = 0;
+            animator.SetBool("shouldAppear",false);
+            objectOne.GetComponent<Animator>().SetBool("isClean",true);
+        }
+        else if (oneDone == true)
+        {
+            animator.SetBool("shouldAppear",false);
+         
+        }
+
+
+        if (oneDone == true)
+        {
+            //Object Two
+            if (Vector3.Distance(objectTwo.transform.position, player.transform.position) < 2f)
+            {
+                Debug.Log("Object Two");
+         
+                shouldFill = true;
+                animator.SetBool("shouldAppear",true);    
+            }
+                
+            if (Input.GetKeyDown(KeyCode.Space) && shouldFill)
+            {
+                addProgress(10);
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
+            {
+                Debug.Log("Don't Fill");
+            }
+            if (currentProgress >= 99f && twoDone == false)
+            {
+                twoDone = true;
+                currentProgress = 0;
+                animator.SetBool("shouldAppear",false);
+                objectTwo.GetComponent<Animator>().SetBool("isCleanTwo",true);
+            }
+
+            //Need to set another variable check here?
+           
+            
+        }
+        
+        
+               
 	}
 
+    float CalculateProgress()
+    {
+        return currentProgress / maxProgress;
+    }
+    
+    void addProgress(float progressGained)
+    {
+        Debug.Log("Adding Progress");
+        progressGained = ProgressRefillRate;
+        currentProgress += progressGained;
+        progressBar.value = CalculateProgress();
 
+        //Prevent the player from restoring past full health
+        if (currentProgress >= maxProgress)
+        {
+            currentProgress -= 1;
+            Debug.Log("Progress is full. Will no longer add more");
+        }  
+           
+    }
+    
     void DealDamage(float damageValue)
     {
 
@@ -68,26 +154,9 @@ public class ProgressBar : MonoBehaviour {
             
     }
 
-    void addProgress(float progressGained)
-    {
-        Debug.Log("Adding Progress");
-        currentProgress += progressGained;
-        progressBar.value = CalculateProgress();
+   
 
-        //Prevent the player from restoring past full health
-        if (currentProgress >= maxProgress)
-        {
-            currentProgress -= 1;
-            Debug.Log("Progress is full. Will no longer add more");
-        }
-        
-           
-    }
-
-    float CalculateProgress()
-    {
-        return currentProgress / maxProgress;
-    }
+   
 
     
 }
