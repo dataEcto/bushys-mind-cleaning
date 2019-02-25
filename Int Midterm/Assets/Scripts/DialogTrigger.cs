@@ -19,13 +19,14 @@ public class DialogTrigger : MonoBehaviour
     public bool oneComplete = false;
     public bool twoComplete = false;
     public bool threeComplete = false;
-    
+
+
+
   
     public void Start()
     {
 	    dialogManager = FindObjectOfType<DialogManager>().GetComponent<DialogManager>();
 		TriggerDialog();
-
 
     }
 
@@ -34,26 +35,13 @@ public class DialogTrigger : MonoBehaviour
       
         if (Input.GetKeyDown(KeyCode.Mouse0) )
         {
-
 		  dialogManager.DisplayNextSentence();
 	
         }
         
-        //Object One
-        if (Vector3.Distance(player.transform.position, objectOne.transform.position) < 3f && isTalking == false)
-        {
-	        oneComplete = true;
-	        if (oneComplete == true)
-	        {
-		        dialogManager.DisplayNextSentence();
-		        oneComplete = false;
-		        Debug.Log("Show next line");   
-	        }
-		       
-	        
-        }
+      
 
-	}
+    }
     
     public void TriggerDialog()
     {
