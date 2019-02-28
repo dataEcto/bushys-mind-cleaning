@@ -7,26 +7,48 @@ using UnityEngine;
 public class RaycastBehavior : MonoBehaviour
 {
 
-    public float maxDistance = .5f;
+    public float maxDistance;
+    public ProgressBar progressScript;
+  
 
+    private void Start()
+    {
+        progressScript = FindObjectOfType<ProgressBar>().GetComponent<ProgressBar>();
+       
+    }
 
     void Update()
     {
 
-        // 1 define the ray
-        Ray roombaRay = new Ray(this.transform.position, this.transform.forward);
+ 
+        Ray playerRay = new Ray(this.transform.position, this.transform.forward);
 
-        // 2 define the max distance
+        Debug.DrawRay(playerRay.origin, playerRay.direction * maxDistance, Color.green);
 
-        // 3 draw debug
+        RaycastHit hit;
 
-        Debug.DrawRay(roombaRay.origin, roombaRay.direction * maxDistance, Color.red);
-
-        RaycastHit roombatHit;
-
-        if (Physics.Raycast(roombaRay.origin, roombaRay.direction, out roombatHit, maxDistance))
+        if (Physics.Raycast(playerRay.origin, playerRay.direction, out hit, maxDistance))
         {
             Debug.Log("I got something, chief!");
+            
+            if (hit.transform.gameObject.tag == "Cleaning Object 1")
+            {
+                progressScript.oneStart = true;
+                Debug.Log("Set one to true");
+            }
+            
+            if (hit.transform.gameObject.tag == "Cleaning Object 2")
+            {
+                progressScript.twoStart = true;
+                Debug.Log("Set two to true");
+            }
+
+            if (hit.transform.gameObject.tag == "damage game")
+            {
+                progressScript.threeStart = true;
+                Debug.Log("Set 3 to true now");
+            }
+            
         }
 
         else

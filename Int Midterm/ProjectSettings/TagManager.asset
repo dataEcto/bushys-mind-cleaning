@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PhysicalPlane
+  - Cleaning Object 1
+  - Cleaning Object 2
+  - damage game
   layers:
   - Default
   - TransparentFX

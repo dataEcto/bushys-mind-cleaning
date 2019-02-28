@@ -59,7 +59,9 @@ public class DialogManager : MonoBehaviour
         string sentence = _sentences.Dequeue();
 
 		//Displays the sentence in game while typing it
+		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence));
+		
      
     }
 

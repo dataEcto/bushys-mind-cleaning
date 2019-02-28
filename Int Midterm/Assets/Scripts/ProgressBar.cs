@@ -30,11 +30,16 @@ public class ProgressBar : MonoBehaviour
     public GameObject player;
 
     public GameObject objectOne;
-    private bool oneDone;
+    public bool oneDone;
+    public bool oneStart;
+    
     public GameObject objectTwo;
-    private bool twoDone;
+    public bool twoDone;
+    public bool twoStart;
+    
     public GameObject objectThree;
-    private bool threeDone;
+    public bool threeDone;
+    public bool threeStart;
 
     //Other Minigames to fill up bar trigger
     bool dealingDamage;
@@ -60,8 +65,11 @@ public class ProgressBar : MonoBehaviour
         progressBar.value = CalculateProgress();
 
         oneDone = false;
+        oneStart = false;
         twoDone = false;
+        twoStart = false;
         threeDone = false;
+        twoStart = false;
 
         dealingDamage = false;
         damageColor = Color.blue;
@@ -71,120 +79,63 @@ public class ProgressBar : MonoBehaviour
     void Update()
     {
 
-      
+        
         //Object One
-        if (Vector3.Distance(objectOne.transform.position, player.transform.position) < 2f)
+        if (oneStart)
         {
             shouldFill = true;
             animator.SetBool("shouldAppear", true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && shouldFill && oneDone == false)
-        {
-            addProgress(10);
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
-        {
-            Debug.Log("Don't Fill");
-        }
-
-        if (currentProgress >= 99f && oneDone == false)
-        {
-            oneDone = true;
-            shouldFill = false;
-            currentProgress = 0;
-            animator.SetBool("shouldAppear", false);
-            objectOne.GetComponent<Animator>().SetBool("isClean", true);
-        }
-        else if (oneDone == true)
-        {
-            animator.SetBool("shouldAppear", false);
-
+            Debug.Log("Run function");
+            CleanObjectOne();
+            oneStart = false;
 
         }
+
 
         //Object Two
-        if (oneDone == true)
+        if (oneDone)
         {
 
 
-            if (Vector3.Distance(objectTwo.transform.position, player.transform.position) < 2f)
+            if (twoStart)
             {
                 Debug.Log("Object Two");
                 shouldFill = true;
+                CleanObjectTwo();
                 animator.SetBool("shouldAppear", true);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && shouldFill && twoDone == false)
-            {
-                addProgress(10);
-            }
-            else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
-            {
-                Debug.Log("Don't Fill");
-            }
+        }
+        
+        
+        //Object Three
+        if (twoDone == true)
+        {
+            animator.SetBool("shouldAppear", false);
+            
+            fillbar.color = damageColor;
 
-            if (currentProgress >= 95f && twoDone == false)
+            if (dealingDamage == false)
             {
-                twoDone = true;
-                currentProgress = 0;
-                animator.SetBool("shouldAppear", false);
-                objectTwo.GetComponent<Animator>().SetBool("isCleanTwo", true);
-            }
-            else if (twoDone == true)
-            {
-                animator.SetBool("shouldAppear", false);
+                currentProgress = 50;
+                dealingDamage = true;
             }
 
-
-            //Object Three
-            if (twoDone == true)
+            if (threeStart)
             {
-                fillbar.color = damageColor;
-
-                if (dealingDamage == false)
-                {
-                    currentProgress = 50;
-                    dealingDamage = true;
-                }
-
-                if (Vector3.Distance(objectThree.transform.position, player.transform.position) < 2f)
-                {
-
-                    shouldFill = true;
-                    animator.SetBool("shouldAppear", true);
-                    DealDamage(15);
-                }
-
-                if (Input.GetKeyDown(KeyCode.Space) && shouldFill && dealingDamage)
-                {
-                    Debug.Log("Refill Less");
-                    addProgress(6);
-                    DealDamage(20);
-                }
-                else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
-                {
-                    Debug.Log("Don't Fill");
-                }
-
-                if (currentProgress >= 99f && threeDone == false)
-                {
-                    threeDone = true;
-                    currentProgress = 0;
-                    animator.SetBool("shouldAppear", false);
-                    objectThree.GetComponent<Animator>().SetBool("isCleanThree", true);
-                    TriggerDialog();
-
-                }
-                else if (threeDone == true)
-                {
-                    animator.SetBool("shouldAppear", false);
-                }
-
-
+                shouldFill = true;
+                animator.SetBool("shouldAppear", true);
+                CleanObjectThree();
+                DealDamage(15);
             }
 
         }
+
+        if (threeDone == true)
+        {
+            animator.SetBool("shouldAppear", false);
+        }
+
 
     }
 
@@ -218,6 +169,89 @@ public class ProgressBar : MonoBehaviour
         progressBar.value = CalculateProgress();
 
 
+    }
+
+    void CleanObjectOne()
+    {
+       
+        if (Input.GetKeyDown(KeyCode.Space) && shouldFill && oneDone == false)
+        {
+            addProgress(10);
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
+        {
+            Debug.Log("Don't Fill");
+        }
+
+        if (currentProgress >= 99f && oneDone == false)
+        {
+            oneDone = true;
+            shouldFill = false;
+            currentProgress = 0;
+            animator.SetBool("shouldAppear", false);
+            objectOne.GetComponent<Animator>().SetBool("isClean", true);
+            
+        }
+        else if (oneDone == true)
+        {
+            animator.SetBool("shouldAppear", false);
+            
+
+        }
+    }
+
+    void CleanObjectTwo()
+    {
+           if (Input.GetKeyDown(KeyCode.Space) && shouldFill && twoDone == false)
+           {
+                        addProgress(10);
+           }
+           else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
+           {
+                Debug.Log("Don't Fill");
+           }
+        
+            if (currentProgress >= 95f && twoDone == false)
+            {
+                        twoDone = true;
+                        currentProgress = 0;
+                        animator.SetBool("shouldAppear", false);
+                        objectTwo.GetComponent<Animator>().SetBool("isCleanTwo", true);
+            }
+            else if (twoDone == true)
+            {
+                        animator.SetBool("shouldAppear", false);
+                        Debug.Log("Go away!");
+            }
+    }
+
+    void CleanObjectThree()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && shouldFill && dealingDamage)
+        {
+            Debug.Log("Refill Less");
+            addProgress(6);
+            DealDamage(20);
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && shouldFill == false)
+        {
+            Debug.Log("Don't Fill");
+        }
+
+        if (currentProgress >= 99f && threeDone == false)
+        {
+            threeDone = true;
+            currentProgress = 0;
+            animator.SetBool("shouldAppear", false);
+            objectThree.GetComponent<Animator>().SetBool("isCleanThree", true);
+            TriggerDialog();
+
+        }
+        else if (threeDone == true)
+        {
+            animator.SetBool("shouldAppear", false);
+        }
+        
     }
 
     //Prototype stuff, not efficient to copy paste dialogtrigger
