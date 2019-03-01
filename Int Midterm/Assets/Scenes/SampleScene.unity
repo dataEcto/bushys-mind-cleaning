@@ -222,7 +222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &37092716
 MonoBehaviour:
@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 62098313}
   - component: {fileID: 62098312}
   - component: {fileID: 62098316}
+  - component: {fileID: 62098317}
   m_Layer: 0
   m_Name: Cleaning Object 2
   m_TagString: Cleaning Object 2
@@ -334,7 +335,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &62098316
 Animator:
@@ -355,6 +356,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &62098317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62098311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3422cb6ad356e0e429ec2dc159673bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convo:
+    name: 
+    sentences:
+    - Going well so far!
+    - Okay, now please fix that weirdly spinning sphere.
+    - Its creeping me out!
+  dialogManager: {fileID: 1651126299}
+  progressScript: {fileID: 1727477484}
 --- !u!1 &164278684
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +409,7 @@ RectTransform:
   - {fileID: 321933751}
   - {fileID: 1261605164}
   m_Father: {fileID: 1972003532}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -518,7 +539,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &321933748
 GameObject:
@@ -713,7 +734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &419792946
 Animator:
@@ -1584,10 +1605,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651126297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -959.99994, y: -540.40814, z: 0}
-  m_LocalScale: {x: 3.265306, y: 3.265306, z: 3.265306}
+  m_LocalPosition: {x: 0.000030517578, y: 0.026367188, z: 0}
+  m_LocalScale: {x: 1.0391157, y: 1.0391157, z: 1.0391157}
   m_Children: []
-  m_Father: {fileID: 1972003532}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727477482
@@ -1624,7 +1645,7 @@ RectTransform:
   - {fileID: 1593845308}
   - {fileID: 410995163}
   m_Father: {fileID: 1972003532}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1647,6 +1668,7 @@ MonoBehaviour:
   progressBar: {fileID: 1727477485}
   fillbar: {fileID: 1263871514}
   player: {fileID: 2054346482}
+  resetBar: 0
   objectOne: {fileID: 37092710}
   oneDone: 0
   oneStart: 0
@@ -1929,11 +1951,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1651126300}
   - {fileID: 164278685}
   - {fileID: 1727477483}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2069,7 +2090,7 @@ Transform:
   - {fileID: 1812943679}
   - {fileID: 660129088}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054346482
 GameObject:
@@ -2200,5 +2221,5 @@ Transform:
   m_Children:
   - {fileID: 1029346502}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

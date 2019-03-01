@@ -37,13 +37,13 @@ public class RaycastBehavior : MonoBehaviour
                 Debug.Log("Set one to true");
             }
             
-            if (hit.transform.gameObject.tag == "Cleaning Object 2")
+            if (hit.transform.gameObject.tag == "Cleaning Object 2" && progressScript.oneDone == true)
             {
                 progressScript.twoStart = true;
                 Debug.Log("Set two to true");
             }
 
-            if (hit.transform.gameObject.tag == "damage game")
+            if (hit.transform.gameObject.tag == "damage game" && progressScript.twoDone == true)
             {
                 progressScript.threeStart = true;
                 Debug.Log("Set 3 to true now");

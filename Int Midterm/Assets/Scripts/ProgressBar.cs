@@ -29,6 +29,7 @@ public class ProgressBar : MonoBehaviour
 
     public GameObject player;
 
+    public bool resetBar;
     public GameObject objectOne;
     public bool oneDone;
     public bool oneStart;
@@ -64,6 +65,7 @@ public class ProgressBar : MonoBehaviour
         //set it to calculate progress
         progressBar.value = CalculateProgress();
 
+        resetBar = false;
         oneDone = false;
         oneStart = false;
         twoDone = false;
@@ -99,8 +101,17 @@ public class ProgressBar : MonoBehaviour
 
             if (twoStart)
             {
-                Debug.Log("Object Two");
+             
+                
                 shouldFill = true;
+                
+                if (resetBar == false)
+                {
+                    currentProgress = 0;
+                    resetBar = true;
+                    Debug.Log("Reset please");
+                }
+               
                 CleanObjectTwo();
                 animator.SetBool("shouldAppear", true);
             }
@@ -194,6 +205,7 @@ public class ProgressBar : MonoBehaviour
         }
         else if (oneDone == true)
         {
+            currentProgress = 0;
             animator.SetBool("shouldAppear", false);
             
 
@@ -219,7 +231,7 @@ public class ProgressBar : MonoBehaviour
                         objectTwo.GetComponent<Animator>().SetBool("isCleanTwo", true);
             }
             else if (twoDone == true)
-            {
+            {    
                         animator.SetBool("shouldAppear", false);
                         Debug.Log("Go away!");
             }
@@ -227,7 +239,7 @@ public class ProgressBar : MonoBehaviour
 
     void CleanObjectThree()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && shouldFill && dealingDamage)
+        if (Input.GetKeyDown(KeyCode.Space) && shouldFill && dealingDamage && threeDone == false)
         {
             Debug.Log("Refill Less");
             addProgress(6);
@@ -250,6 +262,7 @@ public class ProgressBar : MonoBehaviour
         else if (threeDone == true)
         {
             animator.SetBool("shouldAppear", false);
+            DealDamage(0);
         }
         
     }

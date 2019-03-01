@@ -12,7 +12,8 @@
           <e p="DialogTrigger.cs" t="Include" />
           <e p="EndDialog.cs" t="Include" />
           <e p="fpsController.cs" t="Include" />
-          <e p="Object1Dialog.cs" t="Include" />
+          <e p="Object_1_Dialog.cs" t="Include" />
+          <e p="Object_2_Dialog.cs" t="Include" />
           <e p="ProgressBar.cs" t="Include" />
           <e p="RaycastBehavior.cs" t="Include" />
         </e>
