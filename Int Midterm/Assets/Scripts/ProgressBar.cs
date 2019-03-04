@@ -25,18 +25,18 @@ public class ProgressBar : MonoBehaviour
     /// </summary>
     public Slider progressBar;
     public Graphic fillbar;
-   
-
-    public GameObject player;
-
     public bool resetBar;
+    
+    
     public GameObject objectOne;
     public bool oneDone;
     public bool oneStart;
+    public GameObject objectSprite;
     
     public GameObject objectTwo;
     public bool twoDone;
     public bool twoStart;
+    public GameObject switchSprite;
     
     public GameObject objectThree;
     public bool threeDone;
@@ -66,12 +66,18 @@ public class ProgressBar : MonoBehaviour
         progressBar.value = CalculateProgress();
 
         resetBar = false;
+        
         oneDone = false;
         oneStart = false;
+        objectSprite = GameObject.Find("TST");
+        
         twoDone = false;
         twoStart = false;
+        switchSprite = GameObject.Find("Switch");
+        
         threeDone = false;
         twoStart = false;
+       
 
         dealingDamage = false;
         damageColor = Color.blue;
@@ -97,7 +103,7 @@ public class ProgressBar : MonoBehaviour
         //Object Two
         if (oneDone)
         {
-
+            objectSprite.gameObject.SetActive(false);
 
             if (twoStart)
             {
@@ -123,7 +129,7 @@ public class ProgressBar : MonoBehaviour
         if (twoDone == true)
         {
             animator.SetBool("shouldAppear", false);
-            
+            switchSprite.GetComponent<SpriteRenderer>().enabled = false;
             fillbar.color = damageColor;
 
             if (dealingDamage == false)

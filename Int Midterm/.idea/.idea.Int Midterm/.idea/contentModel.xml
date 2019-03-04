@@ -15,11 +15,7 @@
           <e p="Object_1_Dialog.cs" t="Include" />
           <e p="Object_2_Dialog.cs" t="Include" />
           <e p="ProgressBar.cs" t="Include" />
-<<<<<<< Updated upstream
           <e p="RaycastBehavior.cs" t="Include" />
-=======
-          <e p="RaycastFromGround.cs" t="Include" />
->>>>>>> Stashed changes
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
