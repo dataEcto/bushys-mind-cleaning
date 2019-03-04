@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\gjela\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\gjela\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Int Midterm.-1837667323.00" t="ExcludeRecursive" />
-    <e p="C:\Users\gjela\OneDrive\Documents\Unity Projects\int-midterm\Int Midterm" t="IncludeRecursive">
+    <e p="C:\Users\gjela\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Int Midterm.697405763.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gjela\Documents\Unity Projects\int-midterm\Int Midterm" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -15,7 +15,11 @@
           <e p="Object_1_Dialog.cs" t="Include" />
           <e p="Object_2_Dialog.cs" t="Include" />
           <e p="ProgressBar.cs" t="Include" />
+<<<<<<< Updated upstream
           <e p="RaycastBehavior.cs" t="Include" />
+=======
+          <e p="RaycastFromGround.cs" t="Include" />
+>>>>>>> Stashed changes
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

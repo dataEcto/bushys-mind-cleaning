@@ -9,18 +9,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding>
+                <marker date="1551193488774" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551193488774" expanded="true" signature="122:1042" ph="{...}" />
+                <marker date="1551193488774" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
+                <marker date="1551193488774" expanded="true" signature="659:777" ph="{...}" />
+                <marker date="1551193488774" expanded="true" signature="803:949" ph="{...}" />
+                <marker date="1551193488774" expanded="true" signature="863:926" ph="{...}" />
+                <marker date="1551193488774" expanded="true" signature="986:1037" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaycastFromGround.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding>
+                <marker date="1551201625698" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551201625698" expanded="true" signature="126:599" ph="{...}" />
+                <marker date="1551201625698" expanded="true" signature="179:198" ph="{...}" />
+                <marker date="1551201625698" expanded="true" signature="222:597" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RaycastFromGround.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Object1Trigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Object_1_Dialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RaycastBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+>>>>>>> Stashed changes
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,7 +80,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Object_1_Dialog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DialogManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProgressBar.cs" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Assets/Scripts/RaycastBehavior.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/RaycastFromGround.cs" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -106,14 +150,22 @@
       <workItem from="1550792564962" duration="6711000" />
       <workItem from="1550873072774" duration="5573000" />
       <workItem from="1551065050444" duration="657000" />
+<<<<<<< Updated upstream
       <workItem from="1551368322027" duration="6846000" />
       <workItem from="1551397353987" duration="1376000" />
       <workItem from="1551572508758" duration="1064000" />
+=======
+      <workItem from="1551194348985" duration="2689000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="35370000" />
+=======
+    <option name="totallyTimeSpent" value="28773000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -125,7 +177,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -245,6 +297,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -260,6 +313,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -277,6 +332,35 @@
             <marker date="1551572135622" expanded="true" signature="1583:1723" ph="{...}" />
             <marker date="1551572135622" expanded="true" signature="1660:1720" ph="{...}" />
             <marker date="1551572135622" expanded="true" signature="1752:1804" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding>
+            <marker date="1551193488774" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551193488774" expanded="true" signature="122:1042" ph="{...}" />
+            <marker date="1551193488774" expanded="true" signature="203:298" ph="/* The Player + Cleaning Objects on screen ... */" />
+            <marker date="1551193488774" expanded="true" signature="659:777" ph="{...}" />
+            <marker date="1551193488774" expanded="true" signature="803:949" ph="{...}" />
+            <marker date="1551193488774" expanded="true" signature="863:926" ph="{...}" />
+            <marker date="1551193488774" expanded="true" signature="986:1037" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RaycastFromGround.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <marker date="1551201625698" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551201625698" expanded="true" signature="126:599" ph="{...}" />
+            <marker date="1551201625698" expanded="true" signature="179:198" ph="{...}" />
+            <marker date="1551201625698" expanded="true" signature="222:597" ph="{...}" />
           </folding>
         </state>
       </provider>
